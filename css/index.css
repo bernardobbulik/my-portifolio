@@ -34,7 +34,7 @@ h1 ~ a:hover {
   min-height: 100vh;
   background-image:
     linear-gradient(to bottom, transparent 65%, var(--bgFundo) 100%),
-    url("../assets/bg.jpeg");
+    var(--bgImage);
   background-size: cover;
   background-position: center;
 }
@@ -42,7 +42,7 @@ h1 ~ a:hover {
 .postagens {
   margin-top: 10rem;
   color: var(--fonte);
-  background-color: rgba(var(--primaria), 0.05);
+  background-color: rgb(--bgFundo);
   padding: 4rem 3rem;
 }
 
@@ -74,7 +74,7 @@ hr ~ .postagens-body {
 }
 
 .post:hover {
-  transform: scale(1.03);
+  transform: scale(var(--scaleHover));
   box-shadow:
     0 4px 16px 0 rgba(255, 255, 255, 0.2),
     0 6px 50px 0 rgba(255, 255, 255, 0.1);

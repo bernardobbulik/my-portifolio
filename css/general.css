@@ -5,13 +5,17 @@
   --secundaria: 97, 97, 97;
   --fonte: #fff;
   --bgFundo: #000;
+  --bgImage: url("../assets/bg.jpeg");
+  --scaleHover: 1.1;
 }
 
 .light-mode {
-  --primaria: rgba(255, 255, 255, 0.05);
-  --secundaria: rgb(97, 97, 97);
+  --primaria: 255, 255, 255;
+  --secundaria: 97, 97, 97;
   --fonte: #fff;
   --bgFundo: #000;
+  --bgImage: url("../assets/bg.jpeg");
+  --scaleHover: 1.1;
 }
 
 * {
@@ -51,7 +55,7 @@ nav li {
 }
 
 nav li:hover {
-  transform: scale(1.1);
+  transform: scale(var(--scaleHover));
   transition: all ease 0.3s;
 }
 
@@ -63,4 +67,24 @@ nav li > a {
 
 nav li > .active {
   font-weight: bold;
+}
+
+/*================= DARK/LIGHT MODE =================*/
+.page-mode {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  padding: 1.1rem;
+  z-index: 9999;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(var(--primaria));
+  transition: all ease 0.2s;
+}
+
+.page-mode:hover {
+  transform: scale(var(--scaleHover));
+  transition: all ease 0.2s;
 }
