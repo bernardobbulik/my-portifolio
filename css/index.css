@@ -2,12 +2,12 @@ aside {
   position: absolute;
   left: 3rem;
   top: 40%;
-  color: white;
+  color: var(--fonte);
   font-size: 3.5rem;
 }
 
 h1 ~ h1 {
-  color: rgb(var(--secundaria));
+  color: rgba(var(--primaria), 0.4);
   margin-top: 0;
 }
 
@@ -20,6 +20,9 @@ h1 ~ a {
   font-size: 2rem;
   margin-left: 12px;
   color: var(--fonte);
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: rgba(var(--secundaria), var(--lightOpacity));
   text-decoration: none;
   transition: all ease 0.3s;
 }
@@ -41,13 +44,13 @@ h1 ~ a:hover {
 
 .postagens {
   margin-top: 10rem;
-  color: var(--fonte);
+  color: rgb(var(--postColor));
   background-color: rgb(--bgFundo);
   padding: 4rem 3rem;
 }
 
 h1 ~ hr {
-  color: var(--secundaria);
+  color: rgba(var(--postColor), var(--hrOpacity));
   font-size: 1rem;
 }
 
@@ -63,10 +66,14 @@ hr ~ .postagens-body {
 }
 
 .post {
-  background-color: rgba(var(--secundaria), 0.25);
+  background-color: rgba(var(--primaria), var(--navOpacity));
   padding: 1.5rem;
   border-radius: 30px;
   transition: all ease 0.3s;
+}
+
+.post img {
+  opacity: 0.9;
 }
 
 .post > a {
@@ -86,7 +93,7 @@ hr ~ .postagens-body {
 }
 
 .post p {
-  color: rgb(var(--secundaria));
+  color: var(--fonte);
 }
 
 .post p ~ p {

@@ -1,15 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap");
 
 :root {
+  --primaria: 0, 0, 0;
+  --secundaria: 97, 97, 97;
+  --fonte: #fff;
+  --bgFundo: #fff;
+  --bgImage: url("../assets/bg-light.png");
+  --postColor: 97, 97, 97;
+  --scaleHover: 1.1;
+  --lightOpacity: 1;
+  --navOpacity: 0.4;
+  --hrOpacity: 0.6;
+  --toggleBackground: 0, 0, 0;
+}
+/* :root {
   --primaria: 255, 255, 255;
   --secundaria: 97, 97, 97;
   --fonte: #fff;
   --bgFundo: #000;
   --bgImage: url("../assets/bg.jpeg");
+  --postColor: 255, 255, 255;
   --scaleHover: 1.1;
-}
+  --ligthOpacity: 0;
+  --navOpacity: 0.1;
+  --hrOpacity: 0.2;
+  --toggleBackground: 255, 255, 255;
+} */
 
-.light-mode {
+.dark-mode {
   --primaria: 255, 255, 255;
   --secundaria: 97, 97, 97;
   --fonte: #fff;
@@ -45,7 +63,7 @@ nav {
   color: var(--fonte);
   align-items: center;
   gap: 2rem;
-  background-color: rgba(var(--primaria), 0.1);
+  background-color: rgba(var(--primaria), var(--navOpacity));
 }
 
 nav li {
@@ -80,7 +98,7 @@ nav li > .active {
   border: 0;
   border-radius: 50%;
   cursor: pointer;
-  background-color: rgba(var(--primaria));
+  background-color: rgb(var(--toggleBackground));
   transition: all ease 0.2s;
 }
 
