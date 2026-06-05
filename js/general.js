@@ -27,8 +27,10 @@ function toggleMode() {
   let imageModeSource = "";
   // altera imagem do botão para melhorar ux
   if (isDarkMode) {
+    localStorage.setItem("current-mode", "dark");
     imageModeSource = "./assets/icons/sun.svg";
   } else {
+    localStorage.setItem("current-mode", "light");
     imageModeSource = "./assets/icons/moon.svg";
   }
   // muda imagem
