@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  min-height: 70vh;
+}
+
+h1,
+label {
+  color: var(--fonteAlternativa);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  font-size: 1.3rem;
+}
+
+form input {
+  width: 700px;
+  height: 30px;
+  padding: 15px;
+  outline: none;
+}
+
+form textarea {
+  height: 11rem;
+  outline: none;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.form-footer button {
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.form-footer button[type="submit"] {
+  width: 200px;
+}
