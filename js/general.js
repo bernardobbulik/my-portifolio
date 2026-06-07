@@ -17,6 +17,16 @@ const images = [
     imgLight: "./assets/img/posts/post3-light.png",
     imgDark: "./assets/img/posts/post3.png",
   },
+  {
+    elemento: document.getElementById("linkedin"),
+    imgLight: "./assets/icons/linkedin.png",
+    imgDark: "./assets/icons/linkedin-light.svg",
+  },
+  {
+    elemento: document.getElementById("github"),
+    imgLight: "./assets/icons/github.svg",
+    imgDark: "./assets/icons/github-light.svg",
+  },
 ];
 
 function toggleMode() {
@@ -37,10 +47,12 @@ function toggleMode() {
   toggleModeButton.querySelector("img").src = imageModeSource;
   // percorre array trocando a src da imagem dos posts
   images.forEach((image) => {
-    if (isDarkMode) {
-      image.elemento.src = image.imgDark;
-    } else {
-      image.elemento.src = image.imgLight;
+    if (image.elemento != null) {
+      if (isDarkMode) {
+        image.elemento.src = image.imgDark;
+      } else {
+        image.elemento.src = image.imgLight;
+      }
     }
   });
 }

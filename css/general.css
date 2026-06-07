@@ -4,6 +4,7 @@
   --primaria: 0, 0, 0;
   --secundaria: 97, 97, 97;
   --fonte: #fff;
+  --fonteAlternativa: #000;
   --bgFundo: #fff;
   --bgImage: url("../assets/bg-light.png");
   --postColor: 97, 97, 97;
@@ -18,6 +19,7 @@
   --primaria: 255, 255, 255;
   --secundaria: 97, 97, 97;
   --fonte: #fff;
+  --fonteAlternativa: #fff;
   --bgFundo: #000;
   --bgImage: url("../assets/bg.jpeg");
   --postColor: 255, 255, 255;
