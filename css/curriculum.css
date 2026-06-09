@@ -9,18 +9,16 @@ main {
 
 section {
   display: flex;
-  flex-direction: column;
   gap: 2.5rem;
-
-  width: 70%;
+  width: 100%;
 }
 
 article {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 1rem;
+  width: 45%;
 }
 
 ul li {
@@ -33,7 +31,7 @@ ul li ~ ul {
 
 table {
   border-collapse: collapse;
-  width: 70%;
+  width: 100%;
 }
 
 table,
