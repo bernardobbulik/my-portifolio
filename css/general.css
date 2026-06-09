@@ -1,21 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap");
 
 :root {
-  --primaria: 0, 0, 0;
-  --secundaria: 97, 97, 97;
-  --fonte: #fff;
-  --fonteAlternativa: #000;
-  --bgFundo: #fff;
-  --bgImage: url("../assets/bg-light.png");
-  --postColor: 97, 97, 97;
-  --scaleHover: 1.1;
-  --lightOpacity: 1;
-  --navOpacity: 0.4;
-  --hrOpacity: 0.6;
-  --toggleBackground: 0, 0, 0;
-}
-
-.dark-mode {
   --primaria: 255, 255, 255;
   --secundaria: 97, 97, 97;
   --fonte: #fff;
@@ -28,6 +13,21 @@
   --navOpacity: 0.1;
   --hrOpacity: 0.2;
   --toggleBackground: 255, 255, 255;
+}
+
+.light-mode {
+  --primaria: 0, 0, 0;
+  --secundaria: 97, 97, 97;
+  --fonte: #fff;
+  --fonteAlternativa: #000;
+  --bgFundo: #fff;
+  --bgImage: url("../assets/bg-light.png");
+  --postColor: 97, 97, 97;
+  --scaleHover: 1.1;
+  --lightOpacity: 1;
+  --navOpacity: 0.4;
+  --hrOpacity: 0.6;
+  --toggleBackground: 0, 0, 0;
 }
 
 * {

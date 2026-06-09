@@ -4,8 +4,8 @@ const toggleModeButton = document.getElementById("page-mode");
 const images = [
   {
     elemento: document.getElementById("post1"),
-    imgLight: "./assets/img/posts/post1-light.png",
     imgDark: "./assets/img/posts/post1.png",
+    imgLight: "./assets/img/posts/post1-light.png",
   },
   {
     elemento: document.getElementById("post2"),
@@ -19,39 +19,37 @@ const images = [
   },
   {
     elemento: document.getElementById("linkedin"),
-    imgLight: "./assets/icons/linkedin.png",
     imgDark: "./assets/icons/linkedin-light.svg",
+    imgLight: "./assets/icons/linkedin.png",
   },
   {
     elemento: document.getElementById("github"),
-    imgLight: "./assets/icons/github.svg",
     imgDark: "./assets/icons/github-light.svg",
+    imgLight: "./assets/icons/github.svg",
   },
 ];
 
 function toggleMode() {
   // se existir dark-mode ele remove, senão, adiciona.
-  document.documentElement.classList.toggle("dark-mode");
+  document.documentElement.classList.toggle("light-mode");
   // se conter a classe dark-mode, então está no modo escuro.
-  const isDarkMode = document.documentElement.classList.contains("dark-mode");
+  const isLightMode = document.documentElement.classList.contains("light-mode");
   let imageModeSource = "";
   // altera imagem do botão para melhorar ux
-  if (isDarkMode) {
-    localStorage.setItem("current-mode", "dark");
-    imageModeSource = "./assets/icons/sun.svg";
-  } else {
-    localStorage.setItem("current-mode", "light");
+  if (isLightMode) {
     imageModeSource = "./assets/icons/moon.svg";
+  } else {
+    imageModeSource = "./assets/icons/sun.svg";
   }
   // muda imagem
   toggleModeButton.querySelector("img").src = imageModeSource;
   // percorre array trocando a src da imagem dos posts
   images.forEach((image) => {
     if (image.elemento != null) {
-      if (isDarkMode) {
-        image.elemento.src = image.imgDark;
-      } else {
+      if (isLightMode) {
         image.elemento.src = image.imgLight;
+      } else {
+        image.elemento.src = image.imgDark;
       }
     }
   });
