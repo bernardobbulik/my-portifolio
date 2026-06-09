@@ -1,0 +1,49 @@
+ul li,
+h1 {
+  color: var(--fonteAlternativa);
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  width: 70%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+ul li {
+  margin-left: 1rem;
+}
+
+ul li ~ ul {
+  margin-left: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+table,
+ul {
+  margin-left: 2rem;
+}
+
+th,
+td {
+  color: var(--fonteAlternativa);
+  border: 1px solid var(--fonteAlternativa);
+  padding: 5px;
+}
