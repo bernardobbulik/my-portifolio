@@ -1,42 +1,41 @@
-ul li,
-h1 {
-  color: var(--fonteAlternativa);
-}
-
 main {
+  width: 100%;
   padding: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 section {
-  display: flex;
-  gap: 2.5rem;
-  width: 100%;
+  width: 40%;
+}
+
+article ~ article {
+  margin-top: 3rem;
 }
 
 article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  width: 45%;
-}
-
-ul li {
-  margin-left: 1rem;
-}
-
-ul li ~ ul {
-  margin-left: 1.5rem;
+  width: fit-content;
+  color: var(--fonteAlternativa);
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 1.1rem;
 }
 
 table,
-ul {
+article ul {
   margin-left: 2rem;
+}
+
+article ul li {
+  font-size: 1.2rem;
+  list-style-type: square;
+}
+
+article ul li ~ ul li {
+  list-style-type: circle;
 }
 
 th,
@@ -44,4 +43,8 @@ td {
   color: var(--fonteAlternativa);
   border: 1px solid var(--fonteAlternativa);
   padding: 5px;
+}
+
+section img {
+  width: 700px;
 }

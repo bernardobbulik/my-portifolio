@@ -13,6 +13,8 @@
   --navOpacity: 0.1;
   --hrOpacity: 0.2;
   --toggleBackground: 255, 255, 255;
+  --boxShadow: 255, 255, 255;
+  --boxShadowOpacity: 0.1;
 }
 
 .light-mode {
@@ -28,6 +30,8 @@
   --navOpacity: 0.4;
   --hrOpacity: 0.6;
   --toggleBackground: 0, 0, 0;
+  --boxShadow: 0, 0, 0;
+  --boxShadowOpacity: 1;
 }
 
 * {
@@ -99,4 +103,11 @@ nav li > .active {
 .page-mode:hover {
   transform: scale(var(--scaleHover));
   transition: all ease 0.2s;
+}
+
+/*================= BOX-SHADOW IMAGE =================*/
+.has-box-shadow {
+  box-shadow:
+    0 4px 16px 0 rgba(var(--boxShadow), var(--boxShadowOpacity)),
+    0 6px 50px 0 rgba(255, 255, 255, 0.1);
 }

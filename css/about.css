@@ -23,6 +23,11 @@ p {
   color: var(--fonteAlternativa);
 }
 
+.about-text {
+  width: 120ch;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .image-footer {
   display: flex;
   justify-content: center;
